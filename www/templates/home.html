@@ -1,0 +1,10 @@
+<ion-view view-title="Home">
+  <ion-content class="padding">
+    <ion-list ng-controller="storyCtrl">
+			<ion-item ng-repeat="story in stories" href="#/tab/detail/{{story.Id}}">
+				<h2>{{story.Title}}</h2><br>
+				<p>{{story.Content}}</p>
+			</ion-item>
+		</ion-list>	
+  </ion-content>
+</ion-view>
