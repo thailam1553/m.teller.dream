@@ -53,10 +53,10 @@ angular.module('heaven', [
     }
   })
 
-  .state('tab.detail', {
+  .state('detail', {
     url: '/detail/:storyId',
     views: {
-      'tab-detail': {
+      'detail': {
         templateUrl: 'templates/detail.html',
         controller: 'storyCtrl'
       }
