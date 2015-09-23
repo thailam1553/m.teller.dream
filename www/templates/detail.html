@@ -1,37 +1,7 @@
-	<ion-view view-title="{{story.Title}}">
-		<ion-content class="has-header padding">
-		    <div class="list card">
-			  <div class="item item-avatar">
-			  	<img class="full-image" src="./img/logo.png">
-			    <h2>{{story.Title}}</h2>
-			    <p>{{CurrentDate | date:'dd, MMMM yyyy'}}</p>
-			  </div>
-
-			  <div class="item item-body">
-			    <img class="full-image" src="./img/stories/{{story.Image}}">
-			    <p>
-			      {{story.Content}}
-			    </p>
-			    <p>
-			      <a href="#" class="subdued">1 Like</a>
-			      <a href="#" class="subdued">5 Comments</a>
-			    </p>
-			  </div>
-
-			  <div class="item tabs tabs-secondary tabs-icon-left">
-			    <a class="tab-item" href="#">
-			      <i class="icon ion-thumbsup"></i>
-			      Like
-			    </a>
-			    <a class="tab-item" href="#">
-			      <i class="icon ion-chatbox"></i>
-			      Comment
-			    </a>
-			    <a class="tab-item" href="#">
-			      <i class="icon ion-share"></i>
-			      Share
-			    </a>
-			  </div>
-			</div>
-	  	</ion-content>
-	</ion-view>
+<ion-view view-title="{{story.Title}}">
+  <ion-content class="padding">
+    <p>
+      {{detailstory.Content}}
+    </p>
+  </ion-content>
+</ion-view>
