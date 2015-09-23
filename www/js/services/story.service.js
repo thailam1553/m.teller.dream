@@ -27,7 +27,7 @@ angular.module('heaven.services', [])
 	    	Configuration: {
 	      		Free : "True",
 	      		Read : "False",
-	    	}
+	    	} 
 	  	},
 	  	{
 	  		Id: 4,
