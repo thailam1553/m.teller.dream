@@ -1,7 +1,14 @@
-<ion-view>
+<ion-view view-title="Story Teller">
 	<ion-content class="padding">
+		<header>
+			<label class="item item-input" name="Searching">
+               	<i class="icon ion-search placeholder-icon"></i>
+                <input type="search" min-length="1" ng-model="searchitem" placeholder="Enter the name story or author">
+            </label>
+		</header>
+
     	<ion-list ng-controller="storyCtrl">           
-			<ion-item ng-repeat="story in stories | filter:searchitem" href="#/detail/{{story.Id}}">
+			<ion-item ng-repeat="story in stories | filter:searchitem" href="#/tab/detail/{{story.Id}}">
 				<h2>{{story.Title}}</h2><br>
 				<p>{{story.Content}}</p>
 			</ion-item>

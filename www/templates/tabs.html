@@ -7,34 +7,21 @@ navigation history that also transitions its views in and out.
 
   <!-- Home Tab -->
   <ion-tab title="Home" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" badge="3" badge-style="badge badge-assertive" href="#/tab/home">
-    <header>
-      <label class="item item-input" name="Searching">
-          <i class="icon ion-search placeholder-icon"></i>
-          <input type="search" min-length="1" ng-model="searchitem" placeholder="Enter the name story or author">
-      </label>
-    </header>
     <ion-nav-view name="tab-home"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Detail Tab -->
+  <ion-tab title="Details" href="#/tab/detail" hidden="true">
+    <ion-nav-view name="tab-detail"></ion-nav-view>
   </ion-tab>
 
   <!-- Favorite Tab -->
   <ion-tab title="Favorite" icon-off="ion-ios-star-outline" icon-on="ion-ios-star" href="#/tab/favorite">
-    <header>
-      <label class="item item-input" name="Searching">
-          <i class="icon ion-search placeholder-icon"></i>
-          <input type="search" min-length="1" ng-model="searchitem" placeholder="Enter the name story or author">
-      </label>
-    </header>
     <ion-nav-view name="tab-favorite"></ion-nav-view>
   </ion-tab>
 
   <!-- Recent Tab -->
   <ion-tab title="Recent" icon-off="ion-ios-refresh-outline" icon-on="ion-ios-refresh" href="#/tab/recent">
-    <header>
-      <label class="item item-input" name="Searching">
-          <i class="icon ion-search placeholder-icon"></i>
-          <input type="search" min-length="1" ng-model="searchitem" placeholder="Enter the name story or author">
-      </label>
-    </header>
     <ion-nav-view name="tab-recent"></ion-nav-view>
   </ion-tab>
 
